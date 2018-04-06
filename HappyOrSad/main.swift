@@ -31,14 +31,14 @@ for individualCharacter in input {
     print(individualCharacter)
     
     // Categorize the character
-    if individualCharacter == "😃" || individualCharacter == "🙂" || individualCharacter == "😁" || individualCharacter == "😊" {
-        // Track a happy
+    switch individualCharacter {
+    case "😃", "🙂", "😁", "😊":
         happyCount += 1
-    } else if individualCharacter == "🙁"  || individualCharacter == "☹️" || individualCharacter == "😔" || individualCharacter == "😕"  {
-        // Track a sad
+    case "🙁", "☹️", "😔", "😕" :
         sadCount += 1
+    default:
+        break   // do nothing
     }
-    
     
 }
     
